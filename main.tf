@@ -8,16 +8,16 @@ module "instances" {
 variable "instances" {
   type        = map(string)
   default = {
-    frontend  = "t2.medium"
-    mongodb   = "t2.medium"
-    catalogue = "t2.micro"
-    redis     = "t2.small"
-    user      = "t2.small"
-    cart      = "t2.medium"
-    mysql     = "t2.medium"
-    shipping  = "t2.micro"
-    rabbitmq  = "t2.micro"
-    payment   = "t2.small"
+    frontend  = "t3.small"
+    mongodb   = "t3.small"
+    catalogue = "t3.small"
+    redis     = "t3.small"
+    user      = "t3.small"
+    cart      = "t3.small"
+    mysql     = "t3.small"
+    shipping  = "t3.small"
+    rabbitmq  = "t3.small"
+    payment   = "t3.small"
   }
 }
 
