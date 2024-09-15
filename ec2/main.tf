@@ -65,5 +65,10 @@ resource "aws_security_group" "sg" {
   }
 }
 
-variable "name" {}
-variable "type" {}
+variable "name" {
+  type        = string
+}
+
+variable "type" {
+  type        = string
+}
