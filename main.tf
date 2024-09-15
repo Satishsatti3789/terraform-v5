@@ -20,4 +20,4 @@ variable "instances" {
     payment   = "t2.small"
   }
 }
-}
+
