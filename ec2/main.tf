@@ -1,6 +1,6 @@
 resource "aws_instance" "web" {
   ami                    = data.aws_ami.example.id
-  instance_type          = "t2.micro"
+  instance_type          = var.type
   vpc_security_group_ids = [aws_security_group.sg.id]
 
   tags = {
@@ -66,3 +66,4 @@ resource "aws_security_group" "sg" {
 }
 
 variable "name" {}
+variable "type" {}
